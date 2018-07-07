@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/SCROLLER_ID"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/openbutton"
+        android:enabled="true"
+        android:fadingEdge="none"
+        android:onClick="readFile"
+        android:text="@string/OPEN"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/open"
+        android:layout_alignTop="@+id/reset"
+        android:background="@drawable/translatebutton"
+        android:elevation="0dp"
+        android:text="@string/translate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/language"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/SCROLLER_ID"
+        android:layout_alignTop="@+id/open" />
+
+    <TextView
+        android:id="@+id/Selectfile"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/open"
+        android:layout_alignTop="@+id/targetlanguage"
+        android:text="@string/select_file"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/targetlanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignEnd="@+id/SCROLLER_ID"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/select_language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SCROLLER_ID"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/resetbutton"
+        android:text="@string/reset" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="345dp"
+        android:layout_height="336dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="78dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/SCROLLER_ID"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/spinnerview"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+    </ScrollView>
+
+
+</RelativeLayout>

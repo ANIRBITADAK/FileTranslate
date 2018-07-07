@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enterscreen"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="67dp"
+        android:background="@drawable/gobutton"
+        android:text="@string/go"
+        android:textColor="@android:color/holo_green_light" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/go"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/exitbutton"
+        android:text="@string/exit"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorLink="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="353dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        app:srcCompat="@drawable/logofinal" />
+
+    <TextView
+        android:id="@+id/DEVELOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Developed by Valuecom" />
+</RelativeLayout>

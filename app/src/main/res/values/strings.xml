@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FileTranslate</string>
+    <string name="OPEN">OPEN</string>
+    <string name="translate">TRANSLATE</string>
+    <string name="select_language">Select Language</string>
+    <string name="reset">RESET</string>
+    <string name="select_file">Select File</string>
+    <string name="go">GO</string>
+    <string name="exit">EXIT</string>
+</resources>
